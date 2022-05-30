@@ -1,5 +1,6 @@
 package com.android.shoppinglist.presentation
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,6 +12,7 @@ import java.lang.RuntimeException
 
 class ShopListAdapter: RecyclerView.Adapter<ShopListAdapter.ShopItemViewHolder>() {
 
+    var count = 0
     var shopList = listOf<ShopItem>()
     set(value) {
         field = value
@@ -31,6 +33,7 @@ class ShopListAdapter: RecyclerView.Adapter<ShopListAdapter.ShopItemViewHolder>(
     }
 
     override fun onBindViewHolder(holder: ShopItemViewHolder, position: Int) {
+        Log.d("ShopListAdatper", "onBindViewHolder, count: ${++count}")
         val shopItem = shopList[position]
         holder.view.setOnLongClickListener {
             onShopItemLongClickListener?.invoke(shopItem)
