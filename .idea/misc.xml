@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/KotlinEducation/ShoppingList/app/src/main/res/drawable/ic_add.xml" value="0.256" />
+        <entry key="..\:/KotlinEducation/ShoppingList/app/src/main/res/layout/activity_item.xml" value="0.33" />
         <entry key="..\:/KotlinEducation/ShoppingList/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/KotlinEducation/ShoppingList/app/src/main/res/layout/item_shop_disabled.xml" value="0.358695652173913" />
         <entry key="..\:/KotlinEducation/ShoppingList/app/src/main/res/layout/item_shop_enabled.xml" value="0.358695652173913" />
