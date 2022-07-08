@@ -32,6 +32,10 @@ class ShopItemViewModel(application: Application) : AndroidViewModel(application
     val shopItem: LiveData<ShopItem>
         get() = _shopItem
 
+    private val _shouldCloseScreen = MutableLiveData<Unit>()
+    val shouldCloseScreen: LiveData<Unit>
+        get() = _shouldCloseScreen
+
     fun getShopItem(shopItemId: Int) {
         viewModelScope.launch {
             val item = getShopItemUseCase.getShopItem(shopItemId)
@@ -39,10 +43,6 @@ class ShopItemViewModel(application: Application) : AndroidViewModel(application
         }
 
     }
-
-    private val _shouldCloseScreen = MutableLiveData<Unit>()
-    val shouldCloseScreen: LiveData<Unit>
-        get() = _shouldCloseScreen
 
     fun addShopItem(inputName: String?, inputCount: String?) {
 

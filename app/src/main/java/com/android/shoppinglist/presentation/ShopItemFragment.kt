@@ -115,7 +115,10 @@ class ShopItemFragment() : Fragment() {
 
     private fun launchAddMode() {
         binding.saveButton.setOnClickListener {
-            viewModel.addShopItem(binding.etName.text?.toString(), binding.etCount.text?.toString())
+            viewModel.addShopItem(
+                binding.etName.text?.toString(),
+                binding.etCount.text?.toString()
+            )
         }
     }
 
